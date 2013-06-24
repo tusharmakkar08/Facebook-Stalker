@@ -1,5 +1,5 @@
 # Facebook Stalker
-Imported from PhotoGrabber
+Imported from [PhotoGrabber](https://github.com/tam7t/photograbber)
 A cross platform desktop application to download images from Facebook.
 
 ## Dependencies
