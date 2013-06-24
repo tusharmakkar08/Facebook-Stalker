@@ -39,7 +39,7 @@ class ControlMainWindow(QtGui.QWizard):
         self.ui.wizardPageLocation.validatePage = self.beginDownload
 
     def aboutPressed(self):
-        QtGui.QMessageBox.about(self, "About", "PhotoGrabber v2.100\n(C) 2013 Ourbunny\nGPLv3\n\nphotograbber.org\nView the LICENSE.txt file for full licensing information.")
+        QtGui.QMessageBox.about(self, "About", "Facebook Stalker")
 
     def loginPressed(self):
         facebook.request_token()
@@ -157,7 +157,7 @@ class ControlMainWindow(QtGui.QWizard):
         
         # ensure check boxes will work
         if not self.config['t'] and not self.config['u']:
-            QtGui.QMessageBox.warning(self, "PhotoGrabber", "Invalid option combination, please choose to download tagged photos or uploaded albums.")
+            QtGui.QMessageBox.warning(self, "Facebook Stalker", "Invalid option combination, please choose to download tagged photos or uploaded albums.")
             return False
 
         # make sure a real item is selected
@@ -172,7 +172,7 @@ class ControlMainWindow(QtGui.QWizard):
 
         if len(self.config['targets']) > 0: return True
             
-        QtGui.QMessageBox.warning(self, "PhotoGrabber", "Please select a valid target")
+        QtGui.QMessageBox.warning(self, "Facebook Stalker", "Please select a valid target")
         return False
 
     def openFolder(self):
